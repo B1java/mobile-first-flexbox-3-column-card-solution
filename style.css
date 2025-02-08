@@ -1,0 +1,117 @@
+:root {
+    --orange: #e38826;
+    --cyan: #006970;
+    --dark-cyan: #004241;
+    --white: rgba(255,255,255,0.75);
+    --gray: #f2f2f2;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 20% 5%;
+    height: 100vh;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 88vh;
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+.content-container {
+    width: 100%;
+    padding: 14.5%;
+}
+
+p {
+    color: var(--white)
+}
+
+h1 {
+    color: var(--gray)
+}
+
+#sedans {
+    --bg-color: var(--orange);
+    background-color: var(--bg-color);
+}
+
+#suvs {
+    --bg-color: var(--cyan);
+    background-color: var(--bg-color);
+}
+
+#luxury {
+    --bg-color: var(--dark-cyan);
+    background-color: var(--bg-color);
+}
+
+img.icon {
+    margin-bottom: 28px;
+}
+
+.content-container h1 {
+    margin-bottom: 28px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.content-container P {
+    margin-bottom: 32px;
+    line-height: 1.5rem;
+}
+
+.content-container button {
+    background-color: var(--gray);
+    padding: 15px 36px;
+    border-radius: 32px;
+    border: none;
+    color: var(--bg-color);
+    font-weight: 400;
+    font-size: 1.1rem
+}
+
+@media (min-width: 710px) {
+    body {
+        padding: 0;
+    }
+
+    #main-container {
+        flex-wrap: nowrap;
+        width: 62vw;
+        height: 60vh;
+        min-width: 700px;
+        min-height: 300px;
+        max-width: 956px;
+        max-height: 552px;
+    }
+
+    .content-container {
+        height: 100%;
+        width: auto;
+        padding: 6% 5%;
+    }
+
+    .content-container p {
+        margin-bottom: 30%;
+    }
+
+    .content-container img {
+        width: 32%;
+    }
+}
